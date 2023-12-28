@@ -1,4 +1,4 @@
-.toast {
+.note {
   box-sizing: border-box;
   padding: .75rem;
   background-color: white;
@@ -10,27 +10,27 @@
   overflow: hidden;
 }
 
-.toast-container[data-position$="-right"] .toast {
+.note-container[data-position$="-right"] .note {
   transform: translateX(110%);
 }
 
-.toast-container[data-position$="-left"] .toast {
+.note-container[data-position$="-left"] .note {
   transform: translateX(-110%);
 }
 
-.toast-container[data-position="top-center"] .toast {
+.note-container[data-position="top-center"] .note {
   transform: translateY(-100vh);
 }
 
-.toast-container[data-position="bottom-center"] .toast {
+.note-container[data-position="bottom-center"] .note {
   transform: translateY(100vh);
 }
 
-.toast-container .toast.show {
+.note-container .note.show {
   transform: translate(0, 0);
 }
 
-.toast.progress::before {
+.note.progress::before {
   content: "";
   position: absolute;
   height: 2px;
@@ -41,14 +41,14 @@
   right: 0;
 }
 
-.toast.can-close::after {
+.note.can-close::after {
   content: "\00D7";
   position: absolute;
   top: 2px;
   right: 5px;
 }
 
-.toast-container {
+.note-container {
   position: fixed;
   margin: 10px;
   width: 250px;
@@ -57,23 +57,23 @@
   gap: .5rem;
 }
 
-.toast-container[data-position^="top-"] {
+.note-container[data-position^="top-"] {
   top: 0;
 }
 
-.toast-container[data-position^="bottom-"] {
+.note-container[data-position^="bottom-"] {
   bottom: 0;
 }
 
-.toast-container[data-position$="-right"] {
+.note-container[data-position$="-right"] {
   right: 0;
 }
 
-.toast-container[data-position$="-left"] {
+.note-container[data-position$="-left"] {
   left: 0;
 }
 
-.toast-container[data-position$="-center"] {
+.note-container[data-position$="-center"] {
   left: 50%;
   transform: translateX(-50%);
 }
